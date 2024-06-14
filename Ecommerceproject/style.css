@@ -1,0 +1,223 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.navbarlinks {
+    display: flex;
+    padding: 10px;
+    column-gap: 20px;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration:underline;
+}
+.menu-toggle{
+    display: none;
+}
+/*side nav bar*/
+.side-navbar{
+    background-color: lightseagreen;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    color: black;
+    padding: 20px;
+    left: -60%;
+    transition:2s;
+}
+.sidelink a{
+    text-decoration: none;
+    color:black;
+    margin-bottom: 20px;
+}
+.sidelink a:hover{
+    text-decoration: underline;
+}
+/*header*/
+.header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*servie*/
+.service{
+    padding: 20px;
+}
+
+.service1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.service2 div{
+    background-color:lightcyan;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*new arrivals*/
+.newarrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new{
+    position: relative;
+    flex-basis: 20%;
+}
+.newarrival button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightcyan;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    border: none;
+}
+.news{
+    text-align: center;
+}
+.news button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.news input{
+    border: 2px solid black;
+    width: 30%;
+    padding: 10px;
+    
+}
+.footer{
+    background-color: lightseagreen;
+    margin-top: 20px;
+    padding: 20px;
+}
+/*products-section*/
+.products-section{
+    margin-top: 20px;
+
+}
+.product-search{
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px black;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+
+}
+.product-search input{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+
+}
+.product-box img{
+    border-radius: 10px;
+}
+/*contact*/
+.contactCon{
+    background-color: lightseagreen;
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius:10px ;
+  
+   
+}
+.items input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.items input.message{
+    height: 100px;
+
+}
+.items button{
+    margin-top: 10px;
+    background-color: palevioletred;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+
+
+
+/*Media query*/
+@media screen and (max-width:700px) {
+    .menu-toggle{
+        display: block;
+    }
+    .link a{
+        display: none;
+    }
+    .headerimage{
+        display: none;
+    }
+    .service1{
+        display: none;
+    }
+    .service2{
+        flex-direction: column;
+    }
+    
+    
+}
